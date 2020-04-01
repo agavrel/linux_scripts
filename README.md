@@ -3,6 +3,11 @@
 > Obviously you will need to install the corresponding libraries to make this scripts work like a charm.
 
 ---
+### Reduce brightness below keyboard possible level
+
+    echo 50 | sudo tee /sys/class/backlight/intel_backlight/brightness
+
+---
 ### Create favicon from image (give image as argument to the script)
     #!/bin/sh
     if [ ! -z $2 ]
@@ -224,3 +229,24 @@ Then publish the the layer containing the desired library with:
         --license-info "MIT" \
         --content S3Bucket=$BUCKET_NAME,S3Key=layers/layer.zip \
         --compatible-runtimes python$PYVERS'
+
+
+---
+### React.js
+#### Create blank app
+    npx create-react-app myapp
+
+#### Starts the development server
+    npm start
+
+
+#### Bundles the app into static files for production
+    npm run build
+
+
+#### Starts the test runner
+    npm test
+
+
+#### Removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can’t go back!
+    npm run eject
