@@ -3,6 +3,11 @@
 > Obviously you will need to install the corresponding libraries to make this scripts work like a charm.
 
 ---
+### Get remaining size in the cpu
+
+    df -h
+    
+---
 ### Get largest files in the directory
 
     ls -lhSr
