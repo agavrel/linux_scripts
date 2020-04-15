@@ -3,6 +3,16 @@
 > Obviously you will need to install the corresponding libraries to make this scripts work like a charm.
 
 ---
+### Get largest files in the directory
+
+    ls -lhSr
+
+---
+### Get largest directories in the directory
+
+    du -d | sort -n
+    
+---
 ### Reduce brightness below keyboard possible level
 
     echo 50 | sudo tee /sys/class/backlight/intel_backlight/brightness
