@@ -44,6 +44,13 @@
 
 
 ---
+
+### Combine .pdf files
+
+```
+qpdf --empty --pages *.pdf -- out.pdf
+```
+
 ### Convert .md to .pdf
 
 #### Convert .md to pdf
